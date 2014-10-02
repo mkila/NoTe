@@ -3,8 +3,9 @@
 # ~~~~
 
 # Home page
-#GET     /                           controllers.Application.index()
-GET     /               controllers.Assets.at(path="/public", file="index.html")
+#GET     /                     controllers.Application.index()
+GET     /                      controllers.Assets.at(path="/public", file="index.html")
+GET     /accueil               controllers.Assets.at(path="/public", file="accueil.html")
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /*file               controllers.Assets.at(path="/public", file)
