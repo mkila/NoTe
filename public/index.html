@@ -1,29 +1,43 @@
-<!doctype html>
-<html lang="en" ng-app="myApp">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/app.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOUSETUDIANTS.FR - Site de notations des professeurs d'université par les étudiants</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <a class="logo" href="#">
+                <img alt="NOUSETUDIANTS.FR" src="">
+            </a>
+        </header>
 
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+        <section class="text-right nbr-inscrit">
+            150 000 étudiants inscrit
+        </section>
+        <section class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+            <p>La France compte aujourd’hui 2,39 millions d’étudiants dont 1,46 millions inscrits à l’université. Depuis de nombreuses années, on constate que la majeure partie des nouveaux bacheliers atterrit à l’université sans vraiment savoir ce qui l’attend. Malheureusement, une grande partie échouera des la première année. Une partie des survivants rencontrera certains obstacles tels que les notations arbitraires. En se basant sur certains éléments, l’échec universitaire ne serait pas uniquement de la faute des étudiants mais serait aussi dû à un problème d’environnement universitaire lié à l’équipe pédagogique.</p>
+            <p>La mise en place par l’Etat de l’autonomie des universités a accru ce déclin. Les universités gaspillent leur argent au profit du marketing pour attirer les étudiants au lieu de conserver de très bons professeurs et donc avoir un bon enseignement. Ce qui entraine la perte de nombreux modules (matières). Certains disent que les meilleurs étudiants vont dans les grandes écoles ou les écoles privées or selon nous, ce sont surtout ceux qui ont les moyens financiers ou qui prennent des risques (en faisant des prêts). En général, un ancien étudiant français ne veut plus entendre parler de ses années universitaires alors que dans d’autres pays tels qu’aux USA et au Canada, les étudiants sont FIERS de leur université et en gardent de bons souvenirs.</p>
+            <p>Dans le but de mieux choisir son université, nous pourrions vous conseiller de consulter le classement Shanghai En effet, il dresse le palmarès des 500 meilleures universités du monde. Evidemment les universités américaines et anglaises occupent les premières places. Cependant, 4 universités françaises figurent dans le top 100 : l’université Pierre et Marie curie (35e), Paris Sud Orsay (42e), l’Ecole Normale Supérieure (67e) et l‘université de Strasbourg (95e). Néanmoins, le problème majeur de ce classement repose sur certains critères qui ne prennent pas forcément en compte la qualité de l’enseignement et d’autres éléments essentiels à la VRAIE réussite universitaire. En effet, il repose sur le nombre de publications, de citations d’articles, la prise en compte des lauréats Nobel… Les sciences humaines et sociales sont pratiquement ignorées au profit de la recherche et des mathématiques… </p>
+            <p>Ayant pris conscience de certaines difficultés des lycéens et étudiants, NOUS (un groupe d’étudiants) avons décidé de créer ce site qui développera et optimisera une connexion entre lycéen et étudiants mais aussi entre étudiants des différentes universités. Cette connexion via le chat et d’autres outils mis en place offrira divers avantages tels que l’apport en permanence d’informations réelles et directes sur le parcours universitaires, de savoir quelles sont les universités qui offrent les meilleurs formations et les meilleurs professeurs selon les étudiants. Ce site permet aux lycéens d’avoir un pied à l’université et aux étudiants de s’exprimer en toute liberté sans craintes. Nous mettrons en place, petit à petit des outils qui pourront les aider dans leur démarche universitaire et donc mieux vivre son parcours.</p>
+        </section>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
 </body>
 </html>
